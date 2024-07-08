@@ -16,7 +16,7 @@
 - Option to output results to a text file
 
 ## Live Demo
-![Live Demo](assets/mp4/live-demo.mp4)
+[![Live Demo](assets/img/main-page.png)](assets/mp4/live-demo.mp4)
 
 ## Installation
 1. Clone the repository:
