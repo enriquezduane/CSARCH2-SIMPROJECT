@@ -1,4 +1,4 @@
-# BCD Conversion Tools
+# skiBCD Toilet Conversion Tools
 
 ## Description
 **skiBCD Toilet Conversion Tools** is a web-based application that provides utilities for converting between decimal numbers and various Binary-Coded Decimal (BCD) formats. This tool supports conversions to and from unpacked BCD, packed BCD, and densely-packed BCD.
@@ -16,6 +16,7 @@
 - Option to output results to a text file
 
 ## Live Demo
+![Live Demo](assets/mp4/live-demo.mp4)
 
 ## Installation
 1. Clone the repository:
