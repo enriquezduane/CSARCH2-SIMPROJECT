@@ -83,11 +83,11 @@ input[type="text"] {
     border-radius: 5px;
     width: 100%;
     box-sizing: border-box;
-    font-family: 'Comic Sans MS', cursive, sans-serif;
+    font-family: 'Comic Sans MS', monospace, sans-serif, serif;
 }
 
 button {
-    font-family: 'Comic Sans MS', cursive, sans-serif;
+    font-family: 'Comic Sans MS', system-ui, monospace, sans-serif, serif;
     background-color: #ff6347;
     color: white;
     padding: 10px 20px;
