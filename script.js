@@ -217,11 +217,16 @@ function isValidDecimal(input) {
 }
 
 function isValidBCD(input) {
-    if (input.trim() === "") {
+    const cleanInput = input.replace(/\s+/g, '');
+
+    if (cleanInput === "") {
         return "Input cannot be empty. Please enter a BCD number.";
     }
-    if (!/^[01\s]+$/.test(input)) {
-        return "Invalid BCD input. Please use only 0, 1, and spaces.";
+    if (!/^[01]+$/.test(cleanInput)) {
+        return "Invalid BCD input. Please use only 0 and 1.";
+    }
+    if (cleanInput.length % 10 !== 0) {
+        return "Invalid densely packed BCD input. The number of digits must be a multiple of 10.";
     }
     return true;
 }
