@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BCD Converter</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <h1>skiBCD<span>toilet</span> Converter</h1>
+
+    <section id="bcd-generator">
+        <h2>BCD Generator</h2>
+        <div class="input-group">
+            <label for="decimalInput">Decimal Input:</label>
+            <input type="text" id="decimalInput">
+        </div>
+
+        <div class="input-group">
+            <input type="checkbox" id="outputToFile">
+            <label for="outputToFile">Output results to text file</label>
+        </div>
+        <button onclick="generateBCD()">Generate BCD</button>
+        <div class="output-group">
+            <label for="unpackedBCDOutput">Unpacked BCD:</label>
+            <input type="text" id="unpackedBCDOutput" readonly>
+        </div>
+        <div class="output-group">
+            <label for="packedBCDOutput">Packed BCD:</label>
+            <input type="text" id="packedBCDOutput" readonly>
+        </div>
+        <div class="output-group">
+            <label for="denselyPackedBCDOutput">Densely-packed BCD:</label>
+            <input type="text" id="denselyPackedBCDOutput" readonly>
+        </div>
+    </section>
+
+    <section id="bcd-translator">
+        <h2>Densely-packed BCD Translator</h2>
+        <div class="input-group">
+            <label for="denselyPackedBCDInput">Densely-packed BCD Input:</label>
+            <input type="text" id="denselyPackedBCDInput">
+        </div>
+
+        <div class="input-group">
+            <input type="checkbox" id="outputToFile">
+            <label for="outputToFile">Output results to text file</label>
+        </div>
+        <button onclick="translateBCD()">Translate to Decimal</button>
+        <div class="output-group">
+            <label for="decimalOutput">Decimal Output:</label>
+            <input type="text" id="decimalOutput" readonly>
+        </div>
+    </section>
+
+    <audio id="errorAudio">
+        <source src="assets/mp3/invalid-input.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <div id="errorDialog" class="hidden">
+        <p>erm.. what the SIGMA?! Please enter numbers only.</p>
+        <button onclick="closeErrorDialog()">Close</button>
+    </div>
+
+    <audio autoplay loop>
+        <source src="assets/mp3/bgaudio.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+</body>
+
+</html>
