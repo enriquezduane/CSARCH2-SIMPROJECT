@@ -16,7 +16,7 @@
 - Option to output results to a text file
 
 ## Live Demo
-[![Live Demo](assets/img/main-page.png)](assets/mp4/live-demo.mp4)
+https://github.com/enriquezduane/CSARCH2-SIMPROJECT/assets/63909110/aec057c5-cb57-437d-aa86-f670b04e7271
 
 ## Installation
 1. Clone the repository:
