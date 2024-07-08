@@ -1,6 +1,6 @@
 /* style.css */
 body {
-    font-family: 'Comic Sans MS', monospace, sans-serif;
+    font-family: 'Comic Sans MS', system-ui, monospace, sans-serif, serif;
     display: flex;
     flex-direction: column;
     align-items: center;

@@ -207,25 +207,30 @@ function denseChunkToDecimal(dense) {
 }
 
 function isValidDecimal(input) {
-    if (isNaN(input) || input.trim() === "") {
-        document.getElementById('errorAudio').play();
-        showError();
-        return false;
+    if (input.trim() === "") {
+        return "Input cannot be empty. Please enter a decimal number.";
+    }
+    if (isNaN(input)) {
+        return "Invalid input. Please enter a valid decimal number.";
     }
     return true;
 }
 
 function isValidBCD(input) {
-    if (!/^[01\s]+$/.test(input) || input.trim() === "") {
-        document.getElementById('errorAudio').play();
-        showError();
-        return false;
+    if (input.trim() === "") {
+        return "Input cannot be empty. Please enter a BCD number.";
+    }
+    if (!/^[01\s]+$/.test(input)) {
+        return "Invalid BCD input. Please use only 0, 1, and spaces.";
     }
     return true;
 }
 
-function showError() {
-    document.getElementById('errorDialog').classList.remove('hidden');
+function showError(message) {
+    const errorDialog = document.getElementById('errorDialog');
+    errorDialog.querySelector('p').textContent = message;
+    errorDialog.classList.remove('hidden');
+    document.getElementById('errorAudio').play();
 }
 
 function hideError() {
@@ -234,9 +239,10 @@ function hideError() {
 
 function generateBCD() {
     let decimalInput = document.getElementById('decimalInput').value;
+    const validationResult = isValidDecimal(decimalInput);
 
-
-    if (!isValidDecimal(decimalInput)) {
+    if (validationResult !== true) {
+        showError(validationResult);
         return;
     }
 
@@ -259,7 +265,10 @@ function generateBCD() {
 
 function translateBCD() {
     const denselyPackedBCDInput = document.getElementById('denselyPackedBCDInput').value;
-    if (!isValidBCD(denselyPackedBCDInput)) {
+    const validationResult = isValidBCD(denselyPackedBCDInput);
+
+    if (validationResult !== true) {
+        showError(validationResult);
         return;
     }
 
