@@ -1,7 +1,7 @@
 # BCD Conversion Tools
 
 ## Description
-BCD Conversion Tools is a web-based application that provides utilities for converting between decimal numbers and various Binary-Coded Decimal (BCD) formats. This tool supports conversions to and from unpacked BCD, packed BCD, and densely-packed BCD.
+**skiBCD Toilet Conversion Tools** is a web-based application that provides utilities for converting between decimal numbers and various Binary-Coded Decimal (BCD) formats. This tool supports conversions to and from unpacked BCD, packed BCD, and densely-packed BCD.
 
 ![BCD Conversion Tools Screenshot](assets/img/main-page.png)
 
@@ -24,7 +24,7 @@ BCD Conversion Tools is a web-based application that provides utilities for conv
    ```
 2. Navigate to the project directory:
    ```
-   cd CSARCH2-SIMPROJECT
+   cd CSARCH2-SIMPROJECT/
    ```
 3. Open `index.html` in a web browser.
 
