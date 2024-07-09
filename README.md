@@ -29,7 +29,7 @@
 3. Open `index.html` in a web browser.
 
 > [!TIP]
-> Alternatively, you can visit [skiBCD Toilet Conversion Tools](https://enriquezduane.github.io/CSARCH2-SIMPROJECT/) to test it out without having to install anything.
+> Alternatively, you can visit [skiBCD Toilet Conversion Tools](https://enriquezduane.github.io/CSARCH2-SIMPROJECT/) to test the application  without having to install anything.
 
 ## Usage
 ### BCD Generator
@@ -67,12 +67,6 @@ Check the "Output results to text file" checkbox before conversion to save resul
   ![Test Case 100 100 0011](assets/img/test-case-dpbcd-1001000011.png)
 - **000 000 0001 101 101 0101** (20 Digit Binary)
   ![Test Case 000 000 0001 101 101 0101](assets/img/test-case-dpbcd-20digit.png)
-
-## Error Handling
-- Empty input
-- Non-numeric input for decimal
-- Invalid BCD input (containing digits other than 0 and 1)
-- BCD input with incorrect length
 
 ## Technologies Used
 - HTML5
